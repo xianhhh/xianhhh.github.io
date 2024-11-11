@@ -4,31 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script>
+
+  @font-face{
+    font-family:"genshin"
+    src:url("fonts/Genshin.ttf")
+  }
+
+  z{
+    font-family:genshin
+    font-size:50px
+  }
   
+</script>
+
 </head>
 <body>
 
-<p id = "xianhhh">A text</p>
-<button type = "button" onclick="func()" >Click here</button>
-
-<button type="button" onclick="socket">Socket</button>
+<z>A text</z>
 
 
 </body>
-<script>
-  function func(){
-    document.getElementById("xianhhh").innerHTML = "First Html";
-  }
-  function socket(){
-    var socket = new WebSocket("127.0.0.1:8888");
-
-    socket.onopen = function(event){
-      socket.send('Hello');
-    }
-
-    socket.onmessage = function(event){
-      console.log('LOL',event);
-    }
-  }
-</script>
 </html>
